@@ -1,0 +1,167 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+	background-color: white;
+	background-image: linear-gradient(to left, #83a3fd, #2853b2);
+	background-size:cover;
+}
+header{
+	position: fixed; /* cố định trên top*/
+	width: 100%;
+	min-height: 50px;
+	background-color:transparent;
+	background-image: linear-gradient(to left, #83a3fd, #2853b2);
+	background: cover;
+	background-position: center;
+}
+
+.header {
+	display:  flex;
+	align-items:  center; 
+	z-index: 1;
+}
+
+.header img{
+	width: 50px;
+	height: 50px;
+	padding-left: 5px;
+	border-radius: 25px;
+	display: inline-block;
+}
+
+.menu{
+	flex: 1;
+	text-align: center;
+}
+
+.menu ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0px 10px 0px 10px;
+	padding-left: 25px;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	color: #333;
+	font-size: 20px;
+	padding-bottom: 5px;
+	position: relative;
+	cursor: pointer;
+}
+
+.animation::after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 1px;
+	left: 0;
+	bottom: 0;
+	background: #333;
+}
+.animation::after{
+	transform: scale(0,1);
+	transition: transform 0.5s ease-in-out
+}
+
+.animation:hover::after{
+
+	transform: scale(1,1)
+}
+
+.main
+{
+	padding: 300px 20% 20% 20%;
+	
+}
+
+.NoiDung {
+	border-color: none;
+	border-radius: 25px;
+	min-width: 80%;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09);
+	display: flex;
+}
+
+.NoiDung-content {
+	min-width: 50%;
+	justify-content: center;
+	align-self: center;
+	padding: 0 32px;
+	font-size: 1.6rem;
+	line-height: 3rem;
+	text-align: justify;
+}
+
+.NoiDung img{
+	height: 600px;
+	border-radius: 25px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09);
+	transition: transform 0.5s linear;
+}
+
+.NoiDung img:hover{
+	transform: scale(1.5);
+}
+
+@media(max-width:700px)
+{
+	.menu ul li a{
+		font-size: 10px;
+		margin-left: -40px;
+	}
+	
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: black;
+	color: white;
+	padding: 10px 0px 10px 10px; 
+	box-sizing: border-box;
+}
+footer p{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-size: 1.6rem;
+	transition: all 0.3s linear;
+}
+
+footer p:hover{
+	color: rgba(255, 255, 255, 0.726);
+}
+
+.grif_mn
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-auto-rows: minmax(20px, auto);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
